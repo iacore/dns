@@ -2897,7 +2897,7 @@ int dns_rr_i_shuffle(struct dns_rr *a, struct dns_rr *b, struct dns_rr_i *i, str
 } /* dns_rr_i_shuffle() */
 
 
-struct dns_rr_i *dns_rr_i_init(struct dns_rr_i *i, struct dns_packet *P) {
+struct dns_rr_i *dns_rr_i_init(const struct dns_rr_i *i, struct dns_packet *P) {
 	static const struct dns_rr_i i_initializer;
 
 	(void)P;

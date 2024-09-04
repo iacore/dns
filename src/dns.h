@@ -553,7 +553,7 @@ DNS_PUBLIC int dns_rr_i_order(struct dns_rr *, struct dns_rr *, struct dns_rr_i 
 
 DNS_PUBLIC int dns_rr_i_shuffle(struct dns_rr *, struct dns_rr *, struct dns_rr_i *, struct dns_packet *);
 
-DNS_PUBLIC struct dns_rr_i *dns_rr_i_init(struct dns_rr_i *, struct dns_packet *);
+DNS_PUBLIC struct dns_rr_i *dns_rr_i_init(const struct dns_rr_i *, struct dns_packet *);
 
 #define dns_rr_i_save(i)	((i)->saved = (i)->state)
 #define dns_rr_i_rewind(i)	((i)->state = (i)->saved)
